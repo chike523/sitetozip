@@ -140,3 +140,44 @@ const About = () => {
           </div>
         </div>
       </section>
+      
+      <section className="legal-section">
+        <div className="container">
+          <h2 className="section-title text-center">Legal Information</h2>
+          
+          <div className="legal-cards">
+            <div className="legal-card">
+              <h3>Terms of Use</h3>
+              <p>
+                While SiteToZip is free to use, please be aware that you are responsible for ensuring 
+                you have the right to download and archive websites. Only use our service for websites 
+                you have permission to clone.
+              </p>
+              <p>
+                Please respect website terms of service and robots.txt directives. Do not use downloaded 
+                content for any commercial purposes without proper authorization.
+              </p>
+              <Link to="/terms" className="btn btn-secondary">View Full Terms</Link>
+            </div>
+            
+            <div className="legal-card">
+              <h3>Privacy Policy</h3>
+              <p>
+                We take your privacy seriously. SiteToZip doesn't store the content of websites you 
+                download beyond the necessary processing period. Downloads are automatically deleted 
+                after 24 hours.
+              </p>
+              <p>
+                We don't collect personal data beyond what's necessary to provide our service. Your 
+                usage information is anonymized for analytics purposes only.
+              </p>
+              <Link to="/privacy" className="btn btn-secondary">View Privacy Policy</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default About;
