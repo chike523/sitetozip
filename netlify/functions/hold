@@ -1,0 +1,19 @@
+sitetozip/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── Footer.jsx
+│   │   ├── UrlForm.jsx
+│   │   └── DownloadSection.jsx
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   └── HowItWorks.jsx
+│   ├── App.js
+│   └── index.js
+├── netlify/
+│   └── functions/
+│       ├── clone-website.js
+│       └── telegram-webhook.js
+└── package.json

@@ -1,0 +1,86 @@
+.download-section {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    border: 1px solid rgba(108, 99, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .download-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  }
+  
+  .success-icon {
+    color: var(--success);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: scaleIn 0.5s ease forwards;
+  }
+  
+  @keyframes scaleIn {
+    0% { transform: scale(0); opacity: 0; }
+    60% { transform: scale(1.2); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  .download-section h3 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+  }
+  
+  .download-section p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+  }
+  
+  .download-btn {
+    padding: 1rem 2rem;
+    margin: 0.5rem 0 1.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .download-notes {
+    font-size: 0.875rem;
+    color: var(--text-light);
+    margin-top: 1.5rem;
+  }
+  
+  .note-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .note-icon {
+    color: var(--accent);
+    margin-right: 0.5rem;
+  }
+  
+  .note-item p {
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .download-section {
+      padding: 1.5rem;
+    }
+    
+    .success-icon {
+      font-size: 2.5rem;
+    }
+    
+    .download-btn {
+      width: 100%;
+    }
+  }
